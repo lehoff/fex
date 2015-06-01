@@ -12,6 +12,10 @@ defmodule Fex do
   def subscribe_matches, do: Fex.Bcast.subscribe_matches
   def unsubscribe_matches, do: Fex.Bcast.unsubscribe_matches
 
+  def matches do
+    for {:fex_match, id} <- :global.registered_names, do: id
+  end
+
   def new_match() do
     match_id = Fex.Match.Id.new
     {home, away} = random_match
@@ -36,5 +40,5 @@ defmodule Fex do
   def stop_ticks, do: Fex.Ticks.stop
   def tick_interval, do: Fex.Ticks.interval
   def set_tick_interval(t), do: Fex.Ticks.set_interval(t)
-    
+
 end
