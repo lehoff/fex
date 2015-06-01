@@ -1,0 +1,5 @@
+%{"conform": {:hex, :conform, "0.13.0"},
+  "edown": {:git, "git://github.com/esl/edown.git", "4d18dc4bec89c20c0ba8cab6884ce690ca606f4a", [ref: "HEAD"]},
+  "exrm": {:hex, :exrm, "0.15.3"},
+  "ogma": {:git, "https://github.com/lehoff/ogma.git", "76c6d905ef50c8229b33714918765313cbd54bd7", []},
+  "plain_fsm": {:git, "git@github.com:uwiger/plain_fsm.git", "30a9b20c733820d74b01830b59d4bd041cf10f05", []}}
